@@ -14,20 +14,22 @@ public class Salesforce_Reddit {
 
 	}
 
+	public class Data {
+        @AuraEnabled
+		public String author;
+        @AuraEnabled
+		public String title;
+        @AuraEnabled
+		public String url;
+
+	}
+
 	public class Children {
         @AuraEnabled
 		public Data data;
 	}
 
-	public class Data {
-        @AuraEnabled
-		public String author_fullname;
-        @AuraEnabled
-		public String name;
-        @AuraEnabled
-		public String url;
 
-	}
 
 	public static Salesforce_Reddit parse(String json) {
         //???

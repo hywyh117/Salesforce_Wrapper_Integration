@@ -1,9 +1,9 @@
 public with sharing class Reddit_Post_Retriever {
     //To simplify, doesn't use Name Credential here. Set it up in "Remote Setting"
     private static final String REDDIT_URL = 'https://www.reddit.com/r/salesforce/hot.json?limit=1';
-    private static final String GET = 'Get';
+    private static final String GET = 'GET';
 
-    public static List<Salesforce_Reddit.Children> getRedditData() {
+    public static List<Salesforce_Reddit.Data> getRedditData() {
         List<Salesforce_Reddit.Data> redditData = new List<Salesforce_Reddit.Data>();
     
        //Set Connection
@@ -22,8 +22,8 @@ public with sharing class Reddit_Post_Retriever {
     }
 
     for(Salesforce_Reddit.Data data: redditData){
-        system.debug(data.author_fullname);
-        system.debug(data.name);
+        system.debug(data.author);
+        system.debug(data.title);
         system.debug(data.url);
     }
 
