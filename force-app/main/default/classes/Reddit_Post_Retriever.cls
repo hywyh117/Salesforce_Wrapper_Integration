@@ -14,6 +14,10 @@ public with sharing class Reddit_Post_Retriever {
 
     // HttpResponse redditResponse = httpCallout.send(req);
 
+    
+    public static List<Salesforce_Reddit.Data> getRedditData() {
+        List<Salesforce_Reddit.Data> redditData = new List<Salesforce_Reddit.Data>();
+    
     HttpRequest req = new HttpRequest();
         req.setEndpoint('callout:Reddit_Salesforce_Post_1');
         req.setMethod('GET');
