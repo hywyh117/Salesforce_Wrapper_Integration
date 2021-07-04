@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://resilient-hawk-7k3s73-dev-ed.my.salesforce.com",
+  "sourceApiVersion": "50.0"
+}
